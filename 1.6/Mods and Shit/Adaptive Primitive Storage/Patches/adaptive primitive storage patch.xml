@@ -1,110 +1,254 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>        
+<Patch>
 
+    <!-- WOVEN BASKET -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/description</xpath>
+        <value>
+            <description>A woven basket designed for storing various items. Items stored inside do not affect the beauty of their surroundings.\nRotate to open/close.</description>
+        </value>
+    </Operation>
 
-<!-- NERFS -->
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/building/maxItemsInCell</xpath>
+    <!-- WOVEN BASKET DOUBLE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>5</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/description</xpath>
+        <value>
+            <description>A stack of two woven baskets designed for storing various items. Items stored inside do not affect the beauty of their surroundings.</description>
+        </value>
+    </Operation>
+
+    <!-- WOVEN BASKET TRIPLE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/description</xpath>
+        <value>
+            <description>A stack of three woven baskets designed for storing various items. Items stored inside do not affect the beauty of their surroundings.</description>
+        </value>
+    </Operation>
+
+    <!-- GRANARY -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_Granary"]/description</xpath>
+        <value>
+            <description>A granary for keeping food dry. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.</description>
+        </value>
+    </Operation>
+
+    <!-- STORAGE TENT -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/description</xpath>
+        <value>
+            <description>A tent that can store a variety of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.</description>
+        </value>
+    </Operation>
+
+    <!-- COVERED CLAY POT -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/description</xpath>
+        <value>
+            <description>A clay pot designed for storing various items. Items stored inside do not affect the beauty of their surroundings.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/label</xpath>
+        <value>
+            <label>covered pot</label>
+        </value>
+    </Operation>
+
+    <!-- UNCOVERED CLAY POT -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/description</xpath>
+        <value>
+            <description>A clay pot designed for storing various items. Items stored inside do not affect the beauty of their surroundings.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/label</xpath>
+        <value>
+            <label>uncovered pot</label>
+        </value>
+    </Operation>
+
+    <!-- SMALL LOG PILE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/description</xpath>
+        <value>
+            <description>A designated spot to pile wood. Free to build. Deconstructing returns 100% of wood logs stored. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="SmallLogPileGraphics"]/graphics/li[minimumStackCount="2"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>8</minimumStackCount>
+        </value>
+    </Operation>
+
+    <!-- LARGE LOG PILE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>10</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/description</xpath>
+        <value>
+            <description>A designated spot to pile wood. Free to build. Deconstructing returns 100% of wood logs stored. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="LargeLogPileGraphics"]/graphics/li[minimumStackCount="3"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>3</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="LargeLogPileGraphics"]/graphics/li[minimumStackCount="4"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>8</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="LargeLogPileGraphics"]/graphics/li[minimumStackCount="6"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>14</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="LargeLogPileGraphics"]/graphics/li[minimumStackCount="8"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>20</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="LargeLogPileGraphics"]/graphics/li[minimumStackCount="10"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>25</minimumStackCount>
+        </value>
+    </Operation>
+
+    <!-- LOG PILE PATCHS -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/stuffCategories</xpath>
                     <value>
-                        <maxItemsInCell>6</maxItemsInCell>
+                        <stuffCategories>
+                            <li>DankPyon_RawWood</li>
+                        </stuffCategories>
                     </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/building/maxItemsInCell</xpath>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/stuffCategories</xpath>
                     <value>
-                        <maxItemsInCell>12</maxItemsInCell>
+                        <stuffCategories>
+                            <li>DankPyon_RawWood</li>
+                        </stuffCategories>
                     </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/building/maxItemsInCell</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/defaultStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/fixedStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/building/defaultStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/building/fixedStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Reel's Expanded Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
                     <value>
-                        <maxItemsInCell>18</maxItemsInCell>
+                        <VEF.Buildings.HiddenDesignatorsDef>
+                            <defName>FernyAdaptivePrimitiveReelStorageProgStorage_HiddenDesignators</defName>
+                            <hiddenDesignators>
+                                <li>ReelStorageWoodPile</li>
+                                <li>ReelStorageLargeWoodPile</li>
+                            </hiddenDesignators>
+                        </VEF.Buildings.HiddenDesignatorsDef>
                     </value>
-                </Operation>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 
+    <!-- WEAPON RACK -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>3</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/description</xpath>
+        <value>
+            <description>Sturdy pieces of wood lashed together with leather or fabric for storing large quantities of weaponry. Does not prevent deterioration. Prevents weaponry from affecting the beauty of its surroundings.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/label</xpath>
+        <value>
+            <label>primitive weapon rack</label>
+        </value>
+    </Operation>
 
-<!-- RELABEL -->
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/label</xpath>
-                    <value>
-                        <label>primitive weapon rack</label>
-                    </value>
-                </Operation>
-
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/label</xpath>
-                    <value>
-                        <label>covered pot</label>
-                    </value>
-                </Operation>
-
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/label</xpath>
-                    <value>
-                        <label>uncovered pot</label>
-                    </value>
-                </Operation>
-
-<!-- WOOD PATCH -->
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Medieval Overhaul</li>
-		</mods>
-            <match Class="PatchOperationSequence">
-                <operations>
-
-                    <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/stuffCategories</xpath>
-                        <value>
-                            <stuffCategories>
-                                <li>DankPyon_RawWood</li>
-                            </stuffCategories>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/stuffCategories</xpath>
-                        <value>
-                            <stuffCategories>
-                                <li>DankPyon_RawWood</li>
-                            </stuffCategories>
-                        </value>
-                    </li>
-
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/defaultStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
-                    </li>
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/fixedStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
-                    </li>
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/building/defaultStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
-                    </li>
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/building/fixedStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
-                    </li>
-                </operations>
-            </match>
-	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Reel's Expanded Storage</li>
-		</mods>
-            <match Class="PatchOperationSequence">
-                <operations>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs</xpath>
-                        <value>
-							<VEF.Buildings.HiddenDesignatorsDef>
-								<defName>FernyAdaptivePrimitiveReelStorageProgStorage_HiddenDesignators</defName>
-								<hiddenDesignators>
-									<li>ReelStorageWoodPile</li>
-									<li>ReelStorageLargeWoodPile</li>
-								</hiddenDesignators>
-							</VEF.Buildings.HiddenDesignatorsDef>
-                        </value>
-                    </li>
-                </operations>
-            </match>
-	</Operation>
 </Patch>
