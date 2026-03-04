@@ -250,11 +250,5 @@
             <description>Sturdy pieces of wood lashed together with leather or fabric for storing large quantities of weaponry. Does not prevent deterioration. Prevents weaponry from affecting the beauty of its surroundings.</description>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/building/maxItemsInCell</xpath>
-        <value>
-            <maxItemsInCell>3</maxItemsInCell>
-        </value>
-    </Operation>
 
 </Patch>
