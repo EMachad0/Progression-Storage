@@ -3,12 +3,6 @@
 
     <!-- TEXTILE RACK -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/building/maxItemsInCell</xpath>
-        <value>
-            <maxItemsInCell>8</maxItemsInCell>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/description</xpath>
         <value>
             <description>A textile rack for storing fabrics.</description>
@@ -16,13 +10,15 @@
     </Operation>
 
     <!-- CRATES -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/building/maxItemsInCell</xpath>
+    <!-- SMALL CRATE -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]</xpath>
         <value>
-            <maxItemsInCell>8</maxItemsInCell>
+            <building>
+                <maxItemsInCell>8</maxItemsInCell>
+            </building>
         </value>
     </Operation>
-    <!-- SMALL CRATE -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]/label</xpath>
         <value>
@@ -36,6 +32,14 @@
         </value>
     </Operation>
     <!-- MID CRATE -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_MidCrate"]</xpath>
+        <value>
+            <building>
+                <maxItemsInCell>9</maxItemsInCell>
+            </building>
+        </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/label</xpath>
         <value>
@@ -49,6 +53,14 @@
         </value>
     </Operation>
     <!-- LARGE CRATE -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_Crate"]</xpath>
+        <value>
+            <building>
+                <maxItemsInCell>10</maxItemsInCell>
+            </building>
+        </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_Crate"]/label</xpath>
         <value>
@@ -62,6 +74,14 @@
         </value>
     </Operation>
     <!-- TALL CRATE -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_TallCrate"]</xpath>
+        <value>
+            <building>
+                <maxItemsInCell>10</maxItemsInCell>
+            </building>
+        </value>
+    </Operation>
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="sbz_TallCrate"]/label</xpath>
         <value>
