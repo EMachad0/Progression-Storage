@@ -17,7 +17,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>4</maxItemsInCell>
+            <maxItemsInCell>2</maxItemsInCell>
         </value>
     </Operation>
 
@@ -31,7 +31,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>5</maxItemsInCell>
+            <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
 
@@ -87,7 +87,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>6</maxItemsInCell>
+            <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
 
@@ -107,7 +107,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>6</maxItemsInCell>
+            <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
 
@@ -175,14 +175,27 @@
         </value>
     </Operation>
 
-    <!-- LOG PILE PATCHS -->
+    <!-- WEAPON RACK -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/label</xpath>
+        <value>
+            <label>primitive weapon rack</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/description</xpath>
+        <value>
+            <description>Sturdy pieces of wood lashed together with leather or fabric for storing large quantities of weaponry. Does not prevent deterioration. Prevents weaponry from affecting the beauty of its surroundings.</description>
+        </value>
+    </Operation>
+
+    <!-- LOG PILE COMPAT PATCHS -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Medieval Overhaul</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
-
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/stuffCategories</xpath>
                     <value>
@@ -235,20 +248,6 @@
                 </li>
             </operations>
         </match>
-    </Operation>
-
-    <!-- WEAPON RACK -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/label</xpath>
-        <value>
-            <label>primitive weapon rack</label>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/description</xpath>
-        <value>
-            <description>Sturdy pieces of wood lashed together with leather or fabric for storing large quantities of weaponry. Does not prevent deterioration. Prevents weaponry from affecting the beauty of its surroundings.</description>
-        </value>
     </Operation>
 
 </Patch>

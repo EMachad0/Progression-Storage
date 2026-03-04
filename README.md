@@ -12,9 +12,8 @@ Design principles from the Progression modpack that guide this mod:
 
 This mod uses a deterministic approach to balancing, every storage item present on the pack is scrutized and rebalanced.
 
-Starting of a baseline of 8 stacks per tile on Medieval era, storage capacity is added or removed based on the following criteria:
+Starting of a baseline of 6 stacks per tile on Medieval era, storage capacity is added or removed based on the following criteria:
 
-Cost is not taking into consideration as every resource is infinity. Space is not.
 
 -2 if the item's era is bellow Medieval
 +2 if the item's era is above Medieval
@@ -24,4 +23,5 @@ Cost is not taking into consideration as every resource is infinity. Space is no
 
 -1 if the item is ugly, bad textures, cant be rotated etc
 
+Cost is not taking into consideration as every resource is infinity. Space is not.
 Bonus capacity if the item accepts only very specific types of items

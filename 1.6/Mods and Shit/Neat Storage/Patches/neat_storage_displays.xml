@@ -9,6 +9,12 @@
             <description>A round pedestal for showcasing items.</description>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_RoundPedestal"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>2</maxItemsInCell>
+        </value>
+    </Operation>
     <!-- SMALL DISPLAY SHELF -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_SmallDisplayShelf"]/description</xpath>
@@ -26,7 +32,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_DisplayShelf"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>6</maxItemsInCell>
+            <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
     <!-- OPEN SHELF -->
@@ -39,7 +45,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_OpenShelf"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>9</maxItemsInCell>
+            <maxItemsInCell>6</maxItemsInCell>
         </value>
     </Operation>
     <!-- TALL DISPLAY SHELF -->
@@ -49,12 +55,6 @@
             <description>A narrow tall display shelf for storing various items.</description>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="sbz_NarrowTallDisplayShelf"]/building/maxItemsInCell</xpath>
-        <value>
-            <maxItemsInCell>8</maxItemsInCell>
-        </value>
-    </Operation>
     <!-- DOUBLE DISPLAY SHELF -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_TwoTierDisplayShelf"]/description</xpath>
@@ -62,23 +62,11 @@
             <description>A 2-tier display shelf for storing various items.</description>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="sbz_TwoTierDisplayShelf"]/building/maxItemsInCell</xpath>
-        <value>
-            <maxItemsInCell>9</maxItemsInCell>
-        </value>
-    </Operation>
     <!-- DOUBLE TALL DISPLAY SHELF -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_TallDisplayShelf"]/description</xpath>
         <value>
             <description>A tall display shelf for storing various items.</description>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="sbz_TallDisplayShelf"]/building/maxItemsInCell</xpath>
-        <value>
-            <maxItemsInCell>9</maxItemsInCell>
         </value>
     </Operation>
 
@@ -107,7 +95,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_DisplayCabinet"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>6</maxItemsInCell>
+            <maxItemsInCell>5</maxItemsInCell>
         </value>
     </Operation>
 

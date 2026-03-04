@@ -6,7 +6,7 @@
         <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
         <value>
             <building>
-                <maxItemsInCell>8</maxItemsInCell>
+                <maxItemsInCell>6</maxItemsInCell>
             </building>
         </value>
     </Operation>
@@ -22,7 +22,7 @@
         <xpath>Defs/ThingDef[defName="sbz_HalfPallet"]</xpath>
         <value>
             <building>
-                <maxItemsInCell>9</maxItemsInCell>
+                <maxItemsInCell>7</maxItemsInCell>
             </building>
         </value>
     </Operation>
@@ -38,7 +38,7 @@
         <xpath>Defs/ThingDef[defName="sbz_Pallet"]</xpath>
         <value>
             <building>
-                <maxItemsInCell>10</maxItemsInCell>
+                <maxItemsInCell>8</maxItemsInCell>
             </building>
         </value>
     </Operation>
