@@ -9,4 +9,22 @@
         </value>
     </Operation>
 
+    <!-- MEAT HOOK -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MeatHook"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+
+    <!-- WEAPON RACKS -->
+    <!-- Small weapon rack (sbz_WeaponRack) intentionally unchanged. -->
+    <!-- HORIZONTAL + VERTICAL RACKS -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+
 </Patch>

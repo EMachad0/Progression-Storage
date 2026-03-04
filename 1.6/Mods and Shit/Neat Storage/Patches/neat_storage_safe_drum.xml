@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- SAFE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Safe"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>10</maxItemsInCell>
+        </value>
+    </Operation>
+
+    <!-- DRUM -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Drum"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>10</maxItemsInCell>
+        </value>
+    </Operation>
+
+</Patch>

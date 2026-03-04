@@ -119,11 +119,23 @@
             <description>A narrow clothes hanger shelf for storing apparel.</description>
         </value>
     </Operation>
-    <!-- DOUBLE HANGER -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <!-- WIDE HANGER -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]/description</xpath>
         <value>
             <description>A clothes hanger shelf for storing apparel.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
         </value>
     </Operation>
 
