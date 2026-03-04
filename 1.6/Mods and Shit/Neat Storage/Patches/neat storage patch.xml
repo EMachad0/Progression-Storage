@@ -1,28 +1,79 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>        
 
+    <!-- TEXTILE RACK -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/description</xpath>
+        <value>
+            <description>A textile rack for storing fabrics.</description>
+        </value>
+    </Operation>
 
-<!-- RELABEL -->
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_Crate"]/label</xpath>
-                    <value>
-                        <label>large container</label>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/label</xpath>
-                    <value>
-                        <label>medium container</label>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]/label</xpath>
-                    <value>
-                        <label>small container</label>
-                    </value>
-                </Operation>
-
-
+    <!-- CRATES -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <!-- SMALL CRATE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]/label</xpath>
+        <value>
+            <label>small container</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]/description</xpath>
+        <value>
+            <description>A small container for storing a variety of items.</description>
+        </value>
+    </Operation>
+    <!-- MID CRATE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/label</xpath>
+        <value>
+            <label>medium container</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/description</xpath>
+        <value>
+            <description>A medium container for storing a variety of items.</description>
+        </value>
+    </Operation>
+    <!-- LARGE CRATE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Crate"]/label</xpath>
+        <value>
+            <label>large container</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Crate"]/description</xpath>
+        <value>
+            <description>A large container for storing a variety of items.</description>
+        </value>
+    </Operation>
+    <!-- TALL CRATE -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_TallCrate"]/label</xpath>
+        <value>
+            <label>tall container</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_TallCrate"]/description</xpath>
+        <value>
+            <description>A tall container for storing a variety of items.</description>
+        </value>
+    </Operation>
 
 <!-- VE FURNITURE -->
 	<Operation Class="PatchOperationFindMod">
@@ -149,5 +200,6 @@
                 </operations>
             </match>
 	</Operation>
+
 
 </Patch>
