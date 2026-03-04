@@ -23,12 +23,6 @@
 
     <!-- WOVEN BASKET DOUBLE -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/label</xpath>
-        <value>
-            <label>double woven baskets</label>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/description</xpath>
         <value>
             <description>A stack of two woven baskets designed for storing various items. Items stored inside do not affect the beauty of their surroundings.</description>
@@ -42,12 +36,6 @@
     </Operation>
 
     <!-- WOVEN BASKET TRIPLE -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/label</xpath>
-        <value>
-            <label>triple woven baskets</label>
-        </value>
-    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/description</xpath>
         <value>
@@ -63,12 +51,6 @@
 
     <!-- GRANARY -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_Granary"]/label</xpath>
-        <value>
-            <label>granary (3x3)</label>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_Granary"]/description</xpath>
         <value>
             <description>A granary for keeping food dry. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.</description>
@@ -76,12 +58,6 @@
     </Operation>
 
     <!-- STORAGE TENT -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/label</xpath>
-        <value>
-            <label>storage tent (3x3)</label>
-        </value>
-    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/description</xpath>
         <value>
@@ -156,12 +132,6 @@
     </Operation>
 
     <!-- LARGE LOG PILE -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/label</xpath>
-        <value>
-            <label>large wood log pile spot (1x3)</label>
-        </value>
-    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/description</xpath>
         <value>
