@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- TEXTILE RACK -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/description</xpath>
+        <value>
+            <description>A textile rack for storing fabrics.</description>
+        </value>
+    </Operation>
+
+</Patch>

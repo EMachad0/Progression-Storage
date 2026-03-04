@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- MINI PALLET -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
+        <value>
+            <building>
+                <maxItemsInCell>8</maxItemsInCell>
+            </building>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]/description</xpath>
+        <value>
+            <description>A pallet that can stack items of various kinds.</description>
+        </value>
+    </Operation>
+
+    <!-- HALF PALLET -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_HalfPallet"]</xpath>
+        <value>
+            <building>
+                <maxItemsInCell>9</maxItemsInCell>
+            </building>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_HalfPallet"]/description</xpath>
+        <value>
+            <description>A pallet that can stack items of various kinds.</description>
+        </value>
+    </Operation>
+
+    <!-- PALLET -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_Pallet"]</xpath>
+        <value>
+            <building>
+                <maxItemsInCell>10</maxItemsInCell>
+            </building>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Pallet"]/description</xpath>
+        <value>
+            <description>A pallet that can stack items of various kinds.</description>
+        </value>
+    </Operation>
+
+</Patch>
